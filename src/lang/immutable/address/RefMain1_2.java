@@ -2,8 +2,8 @@ package lang.immutable.address;
 
 public class RefMain1_2 {
     public static void main(String[] args) {
-        Adress a = new Adress("서울"); // x001
-        Adress b = new Adress("서울"); // x002
+        Address a = new Address("서울"); // x001
+        Address b = new Address("서울"); // x002
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 
