@@ -10,10 +10,11 @@ public class EnumMethodMain {
         Grade[] values = Grade.values();
         System.out.println("values = " + Arrays.toString(values));
         for (Grade value : values) {
+            // 이름과 숫자를 받을 수 있음
             System.out.println("name=" + value.name() + ", ordinal=" + value.ordinal());
         }
 
-        // String -> ENUM 변환, 잘못된 문자면 Exception 발생
+        // String -> ENUM 변환, 잘못된 문자면 IllegalArguementException 발생
         String input = "GOLD";
         Grade gold = Grade.valueOf(input);
         System.out.println("gold = " + gold);
